@@ -10,5 +10,25 @@
     <th>Department Name</th>
     <th>Actions</th>
   </thead>
+  <tbody>
+    <tr *ngFor="let employeeInfo of employeeInformation">
+      <td>
+        {{ employeeInfo.EmployeeId}}
+      </td>
+      <td>
+        {{ employeeInfo.EmployeeName}}
+      </td>
+      <td>
+        {{ employeeInfo.Salary}}
+      </td>
+      <td>
+        {{ employeeInfo.DepartmentName}}
+      </td>
+      <td>
+        <input type="button" value="Edit" class="btn btn-primary">   
+        <input type="button" value="Delete" class="btn btn-danger">
+      </td>
+    </tr>
+  </tbody>
 </table>
 </div>
