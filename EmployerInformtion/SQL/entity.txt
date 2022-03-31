@@ -1,0 +1,5 @@
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+
+Model létrehozása:
+Scaffold-DbContext "Server=(local);Database=Employee;integrated security=True;;"Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
