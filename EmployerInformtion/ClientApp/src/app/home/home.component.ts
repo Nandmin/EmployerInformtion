@@ -18,8 +18,7 @@ export class HomeComponent {
   }
 
   ngOnInit() {
-    this.httpClient.get('http://localhost:44301/api/EmployeeInfo').subscribe(response: Array<emloyeeInformation>) => {
-      this.employeeInformation = response;
-    };
+    this.httpClient.get('https://localhost:44301/api/EmployeeInfo').subscribe(response: Array<emloyeeInformation>) => {
+      this.employeeInformation = response}
   }
 }
